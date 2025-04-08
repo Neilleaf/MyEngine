@@ -3,7 +3,7 @@ services:
     name: django-backend
     runtime: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn myengine.wsgi:application
+    startCommand: gunicorn railway.wsgi:application
     envVars:
       - key: DEBUG
         value: False
