@@ -22,6 +22,7 @@ from django.conf import settings
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('admin/', admin.site.urls),
     path('signup/', views.signup, name='signup'),
     path('logout/', views.logout, name='logout'),
     path('indexafter/', views.indexafter, name='indexafter'),

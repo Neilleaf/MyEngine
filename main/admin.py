@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import gameinfo, User
 
-# Register your models here.
+admin.site.register(gameinfo)
+admin.site.register(User)
